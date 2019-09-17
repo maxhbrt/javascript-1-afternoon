@@ -20,7 +20,7 @@ var lovesCode = true
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
-greatestFear
+var greatestFear
 
 //////////////////PROBLEM 5////////////////////
 
@@ -83,14 +83,15 @@ var devMountainClassPet = dog.name
 // with NAMEPARAM being the name parameter being passed in
 
 function nameCheck(name){
-  if(name = 'Steven'){
-    return 'what is up Steven'
+  if(name === 'Steven'){
+    return 'What is up Steven?'
   }
-  else if (name = 'Bryan'){
-    return 'Hey Bryan'
+  else if (name === 'Bryan'){
+    return 'Hey Bryan!'
   }
+  
   else{
-    return 'Cool name ' + name
+    return 'Cool name, ' + name
     
   }
 }
@@ -101,14 +102,14 @@ nameCheck('NAMEPARAM')
 // that will be numbers.
 // The add function should return the two parameters added together
 
-function addedNumbers(num1, num2){
+function add(num1, num2){
   return num1 + num2
 }
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
-var mathSum = addedNumbers(3, 4)
+var mathSum = add(3, 4)
 
 //////////////////PROBLEM 12////////////////////
 
@@ -120,13 +121,13 @@ var mathSum = addedNumbers(3, 4)
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
 function faveColorFinder(color){
-  if(color = "red"){
+  if(color === "red"){
     return "red is a great color"
   }
-  else if (color = "green"){
+  else if (color === "green"){
     return "green is a solid favorite color"
   }
-  else if (color = "black"){
+  else if (color === "black"){
     return "so trendy"
   }
   else{
@@ -163,7 +164,7 @@ let globalScope = ["duck"];
 let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["sailorDuck"];
+let bathtubScope = ["sailorDuck", "rubberDuck", "duck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
 let pondScope = ["duck","realDuck"];
